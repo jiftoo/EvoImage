@@ -19,11 +19,8 @@ public class Comparator {
 
 	public static volatile int ALGO = 2; // 0 < 1 < 2
 
-	private static Thread[] threads = new Thread[4];
-
 	// 29579073
 
-	@SuppressWarnings("unused")
 	public static final void setIdeal(BufferedImage ideal) {
 		if (ALGO == 0) {
 			idealRaster = new int[ideal.getWidth() * ideal.getHeight() * 3];
