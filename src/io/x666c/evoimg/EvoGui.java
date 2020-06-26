@@ -29,9 +29,9 @@ public class EvoGui extends JFrame {
 	public static boolean startedOnce = false;
 
 	private JPanel canvasPane;
-	
-public static final String VERSION = "1.4.3";	
-	
+
+	public static final String VERSION = "1.4.4";
+
 	EvoGui() {
 		setTitle("EvoGui " + VERSION);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);

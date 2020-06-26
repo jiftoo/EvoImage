@@ -9,8 +9,8 @@ import javax.swing.JPanel;
 
 public class DisplayCanvas extends JPanel {
 	
-	public static int DISPLAY_WIDTH = 180;
-	public static int DISPLAY_HEIGHT = 180;
+	public static int DISPLAY_WIDTH = 300;
+	public static int DISPLAY_HEIGHT = 300;
 	
 	public static final int DISPLAY_SIZE_LIMIT = 500;
 	
