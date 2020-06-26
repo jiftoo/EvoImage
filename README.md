@@ -1,8 +1,9 @@
 # EvoImage
 ### Fast-_ish_ java hill-climber that can approximate images with triangles!
-#### I welcome _all_ pull requests: new image examples, typos, bug-fixes, functionality, layout, GUI or typo corrections will for sure be accepted! :)
 
-Inspired by <a href="https://www.youtube.com/watch?v=27PYlj-qNb0" title="www.youtube.com/watch/...">this video</a> by the awesome <a href="https://www.youtube.com/channel/UCbfYPyITQ-7l4upoX8nvctg" title="www.youtube.com/channel/...">Two Minute Papers</a>
+#### Inspired by <a href="https://www.youtube.com/watch?v=27PYlj-qNb0" title="www.youtube.com/watch/...">this video</a> authored by the awesome <a href="https://www.youtube.com/channel/UCbfYPyITQ-7l4upoX8nvctg" title="www.youtube.com/channel/...">Two Minute Papers</a>
+
+#### I welcome _all_ pull requests: new image examples, typos, bug-fixes, functionality, layout, GUI or typo corrections will for sure be accepted! :)
 
 <hr/>
 
@@ -45,7 +46,7 @@ Here's some cool results this program can produce.
 
 I worked hard on optimising the image comparator, so it should work pretty fast (_160 iterations/s at 50 triangles_), but there's stil a large handicap:
 ```java
-// Population.java, v1.4.5
+// Population.java, v1.4.4
 
 buffer = deepCopy(members); // < Copies the whole population array each time iterating
 
