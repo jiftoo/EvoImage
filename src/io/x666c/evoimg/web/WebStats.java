@@ -86,7 +86,7 @@ public class WebStats {
 		usf = String.valueOf(usefulMutatuions);
 		usl = String.valueOf(uselessMutatuions);
 		pgr = String.format("%.1f", progress) + "%";
-		evr = String.format("%.1f", ((float) usefulMutatuions) / (float) (uselessMutatuions) - 1);
+		evr = String.format("%.1f", ((double) usefulMutatuions) / (double) (uselessMutatuions) - 1);
 		err = String.format("%.1f", error);
 		dcl = dominantColor;
 		mcl = averageColor;

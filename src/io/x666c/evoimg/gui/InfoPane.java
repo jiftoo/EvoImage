@@ -473,7 +473,7 @@ public class InfoPane extends JPanel {
 		this.uselessMutatuions.setText(String.valueOf(uselessMutatuions));
 		this.progress.setText(String.format("%.1f", progress) + "%");
 		this.progressLog.setText(String.format("%.1f", Math.log(progress)) + "%");
-		this.evolutionRate.setText(String.format("%.1f", ((float)usefulMutatuions) / (float)(uselessMutatuions) - 1));
+		this.evolutionRate.setText(String.format("%.1f", ((double)usefulMutatuions) / (double)(uselessMutatuions) - 1));
 		this.error.setText(String.format("%.1f", error));
 		this.dominantColorIcon.setBackground(dominantColor);
 		this.dominantColorIcon.setToolTipText(dominantColor.toString());

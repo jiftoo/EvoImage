@@ -23,7 +23,7 @@ public class Population {
 	double mutatedError = Double.POSITIVE_INFINITY;
 	double currentError = Double.POSITIVE_INFINITY;
 
-	float completeness = 0;
+	double completeness = 0;
 
 	int goodMutations = 0;
 	int badMutations = 0;
@@ -95,14 +95,19 @@ public class Population {
 	}
 
 	private int colorSwitch = 0;
-	private float firstCompleteness = -100;
+	private double firstCompleteness = -100;
 
 	private void calculateCompleteness() {
-		final float rawVal = (float) (100 * (1 - currentError / (canvas.getWidth() * canvas.getHeight() * 3 * 255)));
+		final double rawVal = (double) (100 * (1 - currentError / (canvas.getWidth() * canvas.getHeight() * 3 * 255)));
 		if (firstCompleteness == -100) {
 			firstCompleteness = rawVal;
 		}
-		completeness = MathUtil.map(rawVal, firstCompleteness, 100, 0, 100);
+		completeness = map(rawVal, firstCompleteness, 100, 0, 100);
+	}
+	
+	// shit
+	public static final double map(double value, double istart, double istop, double ostart, double ostop) {
+		return ostart + (ostop - ostart) * ((value - istart) / (istop - istart));
 	}
 
 	private void calculateColors() {
