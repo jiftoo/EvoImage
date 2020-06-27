@@ -30,7 +30,7 @@ public class EvoGui extends JFrame {
 
 	private JPanel canvasPane;
 
-	public static final String VERSION = "1.4.4";
+	public static final String VERSION = "1.4.5";
 
 	EvoGui() {
 		setTitle("EvoGui " + VERSION);

@@ -35,7 +35,8 @@ Here's some cool results this program can produce.
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/39745401/85873895-76140b00-b7da-11ea-8d38-4354edc70971.png" height="200" title="Windows 7 logo; about 4096 vertices, overnight">
 	<img src="https://user-images.githubusercontent.com/39745401/85874940-174f9100-b7dc-11ea-89d0-f2dd7e4458ff.png" height="200" title="Jotaro vs DIO; 2048 vertices, 7 hours">
-	
+	<img src="https://user-images.githubusercontent.com/39745401/85928248-3883b080-b8b4-11ea-8f25-1fdd5a00bb9c.png" height="200" title="Overwatch logo; 300 vertices, 2 hours">
+	<!--<img src="https://user-images.githubusercontent.com/39745401/85874940-174f9100-b7dc-11ea-89d0-f2dd7e4458ff.png" height="200" title="Jotaro vs DIO; 2048 vertices, 7 hours">-->
 </p>
 
 <a name="Performance"></a>

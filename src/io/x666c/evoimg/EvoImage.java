@@ -25,7 +25,7 @@ import io.x666c.evoimg.internal.Polygonizer;
 import io.x666c.glib4j.math.MathUtil;
 import li.flor.nativejfilechooser.NativeJFileChooser;
 
-// USE *TitledBorder* IT'S SO AWESOME!!11!
+// USE *TitledBorder* IT'S AWESOME!!11!
 
 public class EvoImage {
 	
