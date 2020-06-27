@@ -18,17 +18,12 @@ public class Polygon implements Cloneable {
 		if (InfoPane.colorInitMode() == 0) {
 			color = new Color(0, 0, 0, MathUtil.random());
 		} else if (InfoPane.colorInitMode() == 1) {
-			color = new Color(MathUtil.random(255), MathUtil.random(255), MathUtil.random(255), MathUtil.random(246));
+			color = new Color(MathUtil.random(255), MathUtil.random(255), MathUtil.random(255), MathUtil.random(249));
 		} else if (InfoPane.colorInitMode() == 2) {
 			int r = Polygonizer.IDEAL_MEAN.getRed();
 			int g = Polygonizer.IDEAL_MEAN.getGreen();
 			int b = Polygonizer.IDEAL_MEAN.getBlue();
-			color = new Color(r, g, b, MathUtil.random(246));
-		} else if (InfoPane.colorInitMode() == 3) {
-			int r = Polygonizer.IDEAL_DOMINANT.getRed();
-			int g = Polygonizer.IDEAL_DOMINANT.getGreen();
-			int b = Polygonizer.IDEAL_DOMINANT.getBlue();
-			color = new Color(r, g, b, MathUtil.random(246));
+			color = new Color(r, g, b, MathUtil.random(249));
 		}
 	}
 
@@ -78,7 +73,7 @@ public class Polygon implements Cloneable {
 	}
 
 	void mutateAlpha() {
-		color = new Color(color.getRed(), color.getGreen(), color.getBlue(), MathUtil.random(246));
+		color = new Color(color.getRed(), color.getGreen(), color.getBlue(), MathUtil.random(249));
 	}
 
 	Polygon copy() {

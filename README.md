@@ -1,9 +1,9 @@
 # EvoImage
-### Fast-_ish_ java hill-climber that can approximate images with triangles!
+This is a fast-_ish_ java hill-climber that can approximate images with triangles!
 
-#### Inspired by <a href="https://www.youtube.com/watch?v=27PYlj-qNb0" title="www.youtube.com/watch/...">this video</a> authored by the awesome <a href="https://www.youtube.com/channel/UCbfYPyITQ-7l4upoX8nvctg" title="www.youtube.com/channel/...">Two Minute Papers</a>
+Inspired by <a href="https://www.youtube.com/watch?v=27PYlj-qNb0" title="www.youtube.com/watch/...">this video</a> authored by the awesome <a href="https://www.youtube.com/channel/UCbfYPyITQ-7l4upoX8nvctg" title="www.youtube.com/channel/...">Two Minute Papers</a>
 
-#### I welcome _all_ pull requests: new image examples, typos, bug-fixes, functionality, layout, GUI or typo corrections will for sure be accepted! :)
+I welcome _all_ pull requests: new image examples, typos, bug-fixes, functionality, layout, GUI or typo corrections will for sure be accepted! :)
 
 <hr/>
 
