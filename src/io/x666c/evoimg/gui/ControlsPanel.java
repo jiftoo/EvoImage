@@ -142,10 +142,10 @@ public class ControlsPanel extends JPanel {
 
 		imagePreview.setIcon(new ImageIcon(resize));
 
-		// TODO: This is utterly dumb
 		final BufferedImage sel = getSelectedImage();
 		int tw = sel.getWidth();
 		int th = sel.getHeight();
+		// This is utterly dumb
 //		int b = tw < th ? 1 : 2;
 //		if(b == 1) {
 //			while (tw > DisplayCanvas.DISPLAY_SIZE_LIMIT) {
@@ -162,7 +162,6 @@ public class ControlsPanel extends JPanel {
 		
 		DisplayCanvas.DISPLAY_WIDTH = scaled.width;
 		DisplayCanvas.DISPLAY_HEIGHT = scaled.height;
-//		System.out.println(tw + " " + th);
 		gui.packCanvas();
 	}
 

@@ -162,7 +162,7 @@ public class EvoImage {
 	private void infoUpdate() {
 		long startTime = System.nanoTime();
 		while(loop) {
-			gui.getInfoPane().updateInformation(System.nanoTime() - startTime, 0, polygonizer.getBadMutations(), polygonizer.getGoodMutations(), polygonizer.getCompleteness(), polygonizer.getError(), polygonizer.getDominantColor(), polygonizer.getAverageColor(), polygonizer.getGenerations());
+			gui.getInfoPane().updateInformation(System.nanoTime() - startTime, 0, polygonizer.getGoodMutations(), polygonizer.getBadMutations(), polygonizer.getCompleteness(), polygonizer.getError(), polygonizer.getDominantColor(), polygonizer.getAverageColor(), polygonizer.getGenerations());
 			try {
 				Thread.sleep(20);
 			} catch (Exception e) {}

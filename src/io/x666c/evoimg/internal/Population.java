@@ -6,6 +6,7 @@ import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsEnvironment;
 import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
+import java.util.Arrays;
 
 import de.androidpit.colorthief.ColorThief;
 import io.x666c.glib4j.graphics.PlainRenderer;
@@ -32,7 +33,7 @@ public class Population {
 
 	Color dominantColor = Color.BLACK;
 	Color averageColor = Color.BLACK;
-
+	
 	Population(int amount, BufferedImage image) {
 		ideal = image;
 		Comparator.setIdeal(image);
@@ -48,6 +49,7 @@ public class Population {
 		for (int i = 0; i < members.length; i++) {
 			members[i] = new Polygon();
 		}
+		buffer = new Polygon[amount];
 	}
 
 	private Graphics2D g;

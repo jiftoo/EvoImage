@@ -76,7 +76,7 @@ public class InfoPane extends JPanel {
 		timeSinceStart.setBounds(138, 11, 54, 14);
 		add(timeSinceStart);
 		
-		JLabel lblUsefulMutations = new JLabel("Useful mutations");
+		JLabel lblUsefulMutations = new JLabel("Good mutations");
 		lblUsefulMutations.setHorizontalAlignment(SwingConstants.LEFT);
 		lblUsefulMutations.setBounds(8, 124, 85, 14);
 		add(lblUsefulMutations);
@@ -91,7 +91,7 @@ public class InfoPane extends JPanel {
 		uselessMutatuions.setBounds(136, 149, 56, 14);
 		add(uselessMutatuions);
 		
-		JLabel lblVainMutations = new JLabel("Vain mutations");
+		JLabel lblVainMutations = new JLabel("Bad mutations");
 		lblVainMutations.setHorizontalAlignment(SwingConstants.LEFT);
 		lblVainMutations.setBounds(8, 149, 85, 14);
 		add(lblVainMutations);

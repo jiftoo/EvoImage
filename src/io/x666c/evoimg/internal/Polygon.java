@@ -33,34 +33,41 @@ public class Polygon implements Cloneable {
 	}
 
 	void mutate() {
-		int rnd = MathUtil.random(4 + (3 * 2));
+		int rnd = MathUtil.random(16);
 
-		if (rnd < 3)
+		if (rnd <= 2)
 			mutateColor(rnd);
-		else if (rnd == 3)
-			mutateAlpha();
-		else
+		else if (rnd <= 9)
 			mutateCoordinate(rnd);
+		else
+			mutateAlpha();
+
 	}
 
 	void mutateCoordinate(int rnd) {
-		if (rnd == 4) {
+		switch (rnd) {
+		case 4:
 			p1 = Vector.create(MathUtil.random(Polygonizer.WIDTH), p1.y);
-		} else if (rnd == 5) {
+			break;
+		case 5:
 			p2 = Vector.create(MathUtil.random(Polygonizer.WIDTH), p2.y);
-		} else if (rnd == 6) {
+			break;
+		case 6:
 			p3 = Vector.create(MathUtil.random(Polygonizer.WIDTH), p3.y);
-		} else if (rnd == 7) {
+			break;
+		case 7:
 			p1 = Vector.create(p1.x, MathUtil.random(Polygonizer.HEIGHT));
-		} else if (rnd == 8) {
+			break;
+		case 8:
 			p2 = Vector.create(p1.x, MathUtil.random(Polygonizer.HEIGHT));
-		} else if (rnd == 9) {
+			break;
+		case 9:
 			p3 = Vector.create(p1.x, MathUtil.random(Polygonizer.HEIGHT));
+			break;
 		}
 	}
 
 	void mutateColor(int rnd) {
-
 		if (rnd == 0) {
 			color = new Color(MathUtil.random(255), color.getGreen(), color.getBlue(), color.getAlpha());
 		} else if (rnd == 1) {
@@ -71,7 +78,7 @@ public class Polygon implements Cloneable {
 	}
 
 	void mutateAlpha() {
-		color = new Color(color.getRed(), color.getGreen(), color.getBlue(), MathUtil.random(255));
+		color = new Color(color.getRed(), color.getGreen(), color.getBlue(), MathUtil.random(246));
 	}
 
 	Polygon copy() {
